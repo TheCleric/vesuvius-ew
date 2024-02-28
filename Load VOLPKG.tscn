@@ -1,0 +1,51 @@
+[gd_scene load_steps=2 format=3 uid="uid://yiqhe3wbdbhu"]
+
+[ext_resource type="Script" path="res://Load VOLPKG.gd" id="1_5fgfr"]
+
+[node name="LoadVolpkg" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5fgfr")
+
+[node name="ButtonBrowse" type="Button" parent="."]
+layout_mode = 0
+offset_left = 758.0
+offset_top = 1109.0
+offset_right = 3679.0
+offset_bottom = 1516.0
+theme_override_font_sizes/font_size = 128
+text = "Browse for VOLPKG"
+
+[node name="FileDialog" type="FileDialog" parent="."]
+title = "Open a Directory"
+size = Vector2i(601, 159)
+ok_button_text = "Select Current Folder"
+file_mode = 2
+access = 2
+use_native_dialog = true
+
+[node name="ErrorLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 782.0
+offset_top = 1506.0
+offset_right = 3686.0
+offset_bottom = 1699.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+
+[node name="LoadingLabel" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 754.0
+offset_top = 1100.0
+offset_right = 3674.0
+offset_bottom = 1523.0
+theme_override_font_sizes/font_size = 128
+text = "Loading..."
+horizontal_alignment = 1
+vertical_alignment = 1
